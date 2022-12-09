@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+int top =-1,last=0;
+int stack[max];
+void push(char);
+void pop();
+
+void main ()
+{
+int i;
+char s[max],b,c;
+printf("Enter a string :\n");
+scanf("%s",&s);
+for(i=0;s[i]!='\0';i++)
+{
+b=s[i];
+push(b);
+}
+for(i=0;i<strlen(S)/2:i++)
+{
+if(stack[top]==stack[last])
+{
+pop();
+last++;
+}
+else
+{
+printf("its not a palindrome ");
+}
+}
+ if(strlen(s)2==last)
+ {
+ printf("%S,is palindrome",s);
+ last=0;
+ top=-1;
+ }
+ }
+ void push (char c)
+ {
+ top++;
+ stack[top]=c;
+ }
+void pop()
+{
+top--;
+}
